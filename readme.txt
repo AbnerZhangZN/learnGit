@@ -1,2 +1,3 @@
 It's a interesting thing!
 20161229 add something.....
+读到 git教程--时光机穿梭--版本回退
