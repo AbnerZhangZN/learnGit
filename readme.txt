@@ -5,3 +5,5 @@ It's a interesting thing!
 
 --2017/01/02
 branch 创建分支
+
+credit a new branch is quick AND simple.
