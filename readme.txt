@@ -7,3 +7,6 @@ It's a interesting thing!
 branch 创建分支
 
 creating a new branch is quick and simple.
+
+--分支管理策略
+
