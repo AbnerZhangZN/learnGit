@@ -6,4 +6,4 @@ It's a interesting thing!
 --2017/01/02
 branch 创建分支
 
-creating a new branch is quick & simple.
+creating a new branch is quick and simple.
