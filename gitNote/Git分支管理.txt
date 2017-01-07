@@ -1,0 +1,64 @@
+Git鼓励大量使用分支：
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
+
+Git用<<<<<<<，=======，>>>>>>>标记出不同分支的内容
+
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+<<<<<<< HEAD
+Creating a new branch is quick & simple.
+=======Creating a new branch is quick AND simple.
+>>>>>>> feature1
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并
+
+
+并不是一定要把本地分支往远程推送，那么，哪些分支需要推送，哪些不需要呢？
+
+	* master分支是主分支，因此要时刻与远程同步；
+
+	* dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
+
+	* bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；
+
+	* 
+feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。
+
+
+
+多人协作
+
+	* 查看远程库信息，使用git remote -v；
+
+	* 本地新建的分支如果不推送到远程，对其他人就是不可见的；
+
+	* 从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+
+	* 在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+
+	* 建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+
+	* 
+从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+
+
+
+
+
+
+
